@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+
+/******** ESTILOS GENERALES ************/
+
+
+* {
+    box-sizing: border-box;
+    margin :0;
+    padding :0;
+}
+
+
+
+:root {
+    --color-azulado:#1f506e;
+    --color-green:#98CA3F;
+    --color-blanco:#fff;
+    --color-negro:#000;
+}
+
+body {
+    font-family: 'Righteous', cursive;
+    background-color: #eee;
+}
+
+
+
+/*********** FOOTER *************/
+
+
+
+.container {
+    background-color:var(--color-azulado) ;
+    padding:20px;
+    position:relative;
+    top:0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.container p {
+    color: var(--color-blanco);
+    padding:10px;
+}
+
+.container ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color:var(--color-blanco);
+    font-size: 30px;
+    margin-left:10px;
+}
+
+.container li a:hover {
+    color:var(--color-green);
+    font-size: 40px;
+    transition: .4s;
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        display:flex;
+        justify-content: space-between
+    }
+}
+
+
+
+/************* SOBRE NOSOTROS *************/
+
+
+.section {
+    width:90%;
+    margin: auto;
+}
+.mision {
+    margin-top:90px;
+    margin-bottom:45px;
+    padding: 15px;
+    background-color: var(--color-blanco);
+    border-radius:10px;
+    box-shadow: 0 15px 6px -8px #444; 
+}
+
+.mision p, .vision p {
+    margin-bottom:15px;
+    font-family: Arial;
+    font-size: 20px;
+    
+}
+
+
+.vision {
+    margin-top:45px;
+    padding: 15px;
+    margin-bottom:40px;
+    background-color: var(--color-blanco);
+    border-radius:10px;
+    box-shadow: 0 15px 6px -8px #444; 
+}
+
+.mision h3 {
+    font-family: Times;
+    font-size: 50px;
+    margin-bottom:20px;
+}
+
+.vision h3 {
+    font-family: Times;
+    font-size: 50px;
+    margin-bottom:20px;
+}
+
+hr {
+    width: 60%;
+    margin:auto;
+}
+
+@media (min-width:1024px) {
+    .section {
+        width:70%;
+        margin:auto;
+    }
+}
